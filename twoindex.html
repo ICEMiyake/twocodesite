@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The form</title>
+    <link rel="stylesheet" href="twostyle.css">
+  </head>
+  <body>
+    <h1 id="title">Fill out the form below</h1>
+    <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <form id="survey-form" action="index.html" method="post">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Write your name..." >
+
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="Email" id="email" placeholder="Write your email...">
+
+        <label id="number-label" for="number">Number</label>
+        <input type="number" min="71665" max="999999999999" name="" id="number" placeholder="Write number">
+
+        <label id="dropdown-label" for="dropdown">City</label>
+        <select id="dropdown" name="dropdown">
+          <option value="Stockholm">Stockholm</option>
+          <option value="Göteborg">Göteborg</option>
+          <option value="Malmö">Malmö</option>
+        </select>
+
+        <label for="burger">Burger</label>
+        <input type="radio" name="food" value="burger">
+
+        <label for="carbonara">Pasta carbonara</label>
+        <input type="radio" name="food" value="pasta carbonara">
+
+        <label for="pizza">Pizza</label>
+        <input type="radio" name="food" value="pizza">
+
+        <label for="moreinfo">Aditional info</label>
+      <textarea name="morinfo" rows="8" cols="80" placeholder="Write aditional comments here..." ></textarea>
+
+      <input type="submit" name="submit" value="Submit">
+
+      </form>
+
+  </body>
+</html>
